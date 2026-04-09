@@ -1,0 +1,855 @@
+[
+  {
+    "_id": "c6d9df3ab57b129cfbd7f281",
+    "name": "NEEDO University of Auckland I PASTA & PIZZA",
+    "location": {
+      "address": "University of Auckland Campus",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/fL21VZKjzjtzB9qa8"
+    },
+    "cuisineTypes": [
+      "pizza",
+      "pasta",
+      "italian"
+    ],
+    "priceRange": "low",
+    "rating": 4.0,
+    "openingHours": [],
+    "isCampusVendor": true,
+    "isAvailable": true
+  },
+  {
+    "_id": "88b3b7c8b51e75273ded610b",
+    "name": "Gong cha (UOA)",
+    "location": {
+      "address": "University of Auckland Campus",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/y8mfUYZLBxHvMtzy8"
+    },
+    "cuisineTypes": [
+      "drink",
+      "bubble tea"
+    ],
+    "priceRange": "low",
+    "rating": 3.3,
+    "openingHours": [],
+    "isCampusVendor": true,
+    "isAvailable": true
+  },
+  {
+    "_id": "f15fcb5166e22550ea3b8a08",
+    "name": "TANK Auckland university",
+    "location": {
+      "address": "University of Auckland Campus",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/jC7qcxHUXrKnadnF8"
+    },
+    "cuisineTypes": [
+      "drink",
+      "smoothie",
+      "healthy"
+    ],
+    "priceRange": "medium",
+    "rating": 4.0,
+    "openingHours": [],
+    "isCampusVendor": true,
+    "isAvailable": true
+  },
+  {
+    "_id": "b3f51fc4de4dc4346c3b6ce0",
+    "name": "Hello Food Limited",
+    "location": {
+      "address": "University of Auckland Campus",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/ZT7dWnDbtccuNhXRA"
+    },
+    "cuisineTypes": [
+      "chinese",
+      "drink"
+    ],
+    "priceRange": "medium",
+    "rating": 3.7,
+    "openingHours": [],
+    "isCampusVendor": true,
+    "isAvailable": true
+  },
+  {
+    "_id": "4dd10f6a16c9d17cc2352df8",
+    "name": "ChiChop",
+    "location": {
+      "address": "University of Auckland Campus",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/QoEXqm8kSc6Vz46R9"
+    },
+    "cuisineTypes": [
+      "drink"
+    ],
+    "priceRange": "low",
+    "rating": 3.5,
+    "openingHours": [],
+    "isCampusVendor": true,
+    "isAvailable": true
+  },
+  {
+    "_id": "978ed9038efa862727ad2981",
+    "name": "CONSCIOUS EAT",
+    "location": {
+      "address": "University of Auckland Campus",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/tutzwKjjF1T2zatx6"
+    },
+    "cuisineTypes": [
+      "drink"
+    ],
+    "priceRange": "low",
+    "rating": 4.8,
+    "openingHours": [],
+    "isCampusVendor": true,
+    "isAvailable": true
+  },
+  {
+    "_id": "b165fde465740074290689c5",
+    "name": "Standing Room Espresso Symonds Street",
+    "location": {
+      "address": "Symond Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/CY6t6brawpEsVZeM8"
+    },
+    "cuisineTypes": [
+      "drink",
+      "coffee",
+      "cafe"
+    ],
+    "priceRange": "low",
+    "rating": 4.6,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "58e30f83928bd2fb2a1ffcae",
+    "name": "Starbucks Symonds Street",
+    "location": {
+      "address": "Symond Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/27VroSCvSQ7n4sWu9"
+    },
+    "cuisineTypes": [
+      "drink",
+      "coffee"
+    ],
+    "priceRange": "low",
+    "rating": 4.1,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "0ac22dfc2effa4bb54d6e4a5",
+    "name": "Pita Pit Symonds Street",
+    "location": {
+      "address": "Symond Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/F9cR2hbKU8XCjXye7"
+    },
+    "cuisineTypes": [
+      "drink"
+    ],
+    "priceRange": "low",
+    "rating": 3.9,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "55922fd7a458a2a9c0ec9624",
+    "name": "Subway",
+    "location": {
+      "address": "Paul Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/P49ytmvbHbEE4e1eA"
+    },
+    "cuisineTypes": [
+      "restaurant"
+    ],
+    "priceRange": "medium",
+    "rating": 3.4,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "cdfcc9447b1bc061442a612b",
+    "name": "The Daily Meetery",
+    "location": {
+      "address": "Paul Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/cxXCgT6F4XLdh3ak7"
+    },
+    "cuisineTypes": [
+      "japanese",
+      "cafe"
+    ],
+    "priceRange": "low",
+    "rating": 4.9,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "66188ea27c12484de71d4e32",
+    "name": "Sensational Chicken Mount St",
+    "location": {
+      "address": "Mount Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/keKh8WTUSGLXviub9"
+    },
+    "cuisineTypes": [
+      "drink"
+    ],
+    "priceRange": "low",
+    "rating": 4.3,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "5afa553e4c989b264b122c5b",
+    "name": "Ikkyu Japanese Restaurant",
+    "location": {
+      "address": "Mount Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/bE3VEGt2RZXrevANA"
+    },
+    "cuisineTypes": [
+      "japanese"
+    ],
+    "priceRange": "medium",
+    "rating": 4.4,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "829767e919547354a2990124",
+    "name": "Gallery Café",
+    "location": {
+      "address": "Kitchener Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/Jiziq5E3RLjXVE2M9"
+    },
+    "cuisineTypes": [
+      "chinese",
+      "cafe"
+    ],
+    "priceRange": "low",
+    "rating": 4.2,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "8821c2092fcab5831caaac03",
+    "name": "PotXpress Hotpot Buffet 小锅快线 – CBD",
+    "location": {
+      "address": "Kitchener Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/fxLufchtsGQrudky9"
+    },
+    "cuisineTypes": [
+      "buffet"
+    ],
+    "priceRange": "medium",
+    "rating": 4.7,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "b3e9079b0232751380b7836c",
+    "name": "Changan Burger",
+    "location": {
+      "address": "Kitchener Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/6jq4vqQTFwMTVcGC6"
+    },
+    "cuisineTypes": [
+      "chinese",
+      "burger"
+    ],
+    "priceRange": "medium",
+    "rating": 4.8,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "ffe1763db6f0b8fa518f66c5",
+    "name": "Meeso Coffee",
+    "location": {
+      "address": "Kitchener Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/owWkXtC56htmx6JX7"
+    },
+    "cuisineTypes": [
+      "drink",
+      "coffee",
+      "cafe"
+    ],
+    "priceRange": "low",
+    "rating": 4.5,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "29a97e3dc99a1c99a56ee12b",
+    "name": "Oodles 老白家兰州牛肉面(CBD)",
+    "location": {
+      "address": "Kitchener Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/LVRMJUj1GnJo4qeC8"
+    },
+    "cuisineTypes": [
+      "chinese"
+    ],
+    "priceRange": "medium",
+    "rating": 4.9,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "ddfade458b8861a1836c0a23",
+    "name": "Scarecrow Mediterranean Cafe",
+    "location": {
+      "address": "Kitchener Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/zYR23JEM5wQfaasP8"
+    },
+    "cuisineTypes": [
+      "cafe"
+    ],
+    "priceRange": "medium",
+    "rating": 4.5,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "efcb846f8d9d1c429eed9034",
+    "name": "Pocha CBD",
+    "location": {
+      "address": "Kitchener Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/1S6xGi1S6YUPmspW8"
+    },
+    "cuisineTypes": [
+      "korean"
+    ],
+    "priceRange": "medium",
+    "rating": 4.5,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "27d11f618b407b483b5e0aef",
+    "name": "Eden Noodles",
+    "location": {
+      "address": "Wellesy Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/Bztaw4fuVeHivD9RA"
+    },
+    "cuisineTypes": [
+      "chinese"
+    ],
+    "priceRange": "low",
+    "rating": 4.4,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "d5dcc06db07a0a7215f0af82",
+    "name": "Chom Na Thai Food",
+    "location": {
+      "address": "Lorne Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/dTG89s7KCkTApzfZ7"
+    },
+    "cuisineTypes": [
+      "thai"
+    ],
+    "priceRange": "medium",
+    "rating": 4.4,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "960695f4e845421ec3a0c474",
+    "name": "Patch Cafe - Lorne St",
+    "location": {
+      "address": "Lorne Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/ghZgsSqqTdtXJSSE9"
+    },
+    "cuisineTypes": [
+      "cafe"
+    ],
+    "priceRange": "medium",
+    "rating": 4.2,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "b4075b1b027329588846cc29",
+    "name": "Little Panda Takeaway",
+    "location": {
+      "address": "Lorne Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/9T1VmSEztUNhTGY39"
+    },
+    "cuisineTypes": [
+      "chinese"
+    ],
+    "priceRange": "low",
+    "rating": 4.4,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "f8e9b3dedd2392348b249c36",
+    "name": "来来凉皮Lailai Liang Pi",
+    "location": {
+      "address": "Lorne Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/uW2hc2QyNFzWNSVHA"
+    },
+    "cuisineTypes": [
+      "chinese"
+    ],
+    "priceRange": "low",
+    "rating": 4.9,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "aa5ab3c0b3ab091fab4bb2da",
+    "name": "Saigon Chill",
+    "location": {
+      "address": "Lorne Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/vH2Bkug76MybsBzf6"
+    },
+    "cuisineTypes": [
+      "chinese"
+    ],
+    "priceRange": "medium",
+    "rating": 4.1,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "6b5a6eeb35e18f95ff994df4",
+    "name": "ssam jang",
+    "location": {
+      "address": "Lorne Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/XTG1iybfMFoWfCGNA"
+    },
+    "cuisineTypes": [
+      "korean"
+    ],
+    "priceRange": "medium",
+    "rating": 4.4,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "1cdcc38631aea4c2b5aa0ff9",
+    "name": "WUCHA LORNE STREET 悟茶",
+    "location": {
+      "address": "Lorne Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/7fN87cvrkswtTGqM6"
+    },
+    "cuisineTypes": [
+      "drink",
+      "bubble tea"
+    ],
+    "priceRange": "low",
+    "rating": 3.9,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "bad3871e73a2048847f5c9c5",
+    "name": "Paskatsu",
+    "location": {
+      "address": "Lorne Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/fXZgyX8jFbmiVy228"
+    },
+    "cuisineTypes": [
+      "japanese"
+    ],
+    "priceRange": "medium",
+    "rating": 4.4,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "d1ebc4e59589337a190599b4",
+    "name": "Biang Biang City",
+    "location": {
+      "address": "Lorne Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/oVu8FhECQJCXngXc8"
+    },
+    "cuisineTypes": [
+      "chinese"
+    ],
+    "priceRange": "low",
+    "rating": 4.4,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "b675df6910342e247e434ddb",
+    "name": "Wheatz Bakery",
+    "location": {
+      "address": "Lorne Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/y9co8djx2pRRrkv26"
+    },
+    "cuisineTypes": [
+      "restaurant"
+    ],
+    "priceRange": "low",
+    "rating": 4.2,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "9bdd061e697195c641f2c204",
+    "name": "Plus chicken",
+    "location": {
+      "address": "Lorne Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/LjV8eLU1cz7GCGHW9"
+    },
+    "cuisineTypes": [
+      "korean"
+    ],
+    "priceRange": "low",
+    "rating": 3.7,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "4032e71553f0f8db0ba3f973",
+    "name": "TSUJIRI Lorne Street",
+    "location": {
+      "address": "Lorne Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/DBQbSG3MQ66WW3mZA"
+    },
+    "cuisineTypes": [
+      "restaurant"
+    ],
+    "priceRange": "low",
+    "rating": 4.3,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "eaa830d3e8fd2ce67ca41f3e",
+    "name": "Meet Fresh",
+    "location": {
+      "address": "Lorne Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/rZ4AJiB39hBJwNDh7"
+    },
+    "cuisineTypes": [
+      "restaurant"
+    ],
+    "priceRange": "medium",
+    "rating": 3.9,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "cb78a2507cf5ba9130d17caf",
+    "name": "苏小雨 Sue's Dim Sum",
+    "location": {
+      "address": "Lorne Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/AzB9g8TFi7Ty1uzVA"
+    },
+    "cuisineTypes": [
+      "chinese"
+    ],
+    "priceRange": "medium",
+    "rating": 4.7,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "4fabd22f5ec72fd18967f3fb",
+    "name": "Yoshizawa Japanese Restaurant",
+    "location": {
+      "address": "Lorne Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/ydcBrRSKebND9ey7A"
+    },
+    "cuisineTypes": [
+      "japanese"
+    ],
+    "priceRange": "medium",
+    "rating": 4.5,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "5859f20f930b3da2e7e736a7",
+    "name": "椰椰制造厂COCONUT FACTORY CBD",
+    "location": {
+      "address": "High Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/toffKYvoHA9ikE5W7"
+    },
+    "cuisineTypes": [
+      "restaurant"
+    ],
+    "priceRange": "low",
+    "rating": 4.4,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "537feebb87ac56ac40bf52a1",
+    "name": "Chahalo 茶话弄",
+    "location": {
+      "address": "High Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/NBugaGeZL1uGFPAS7"
+    },
+    "cuisineTypes": [
+      "drink",
+      "bubble tea"
+    ],
+    "priceRange": "low",
+    "rating": 4.6,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "da86e1ab35a850dd935a8426",
+    "name": "Koiya Japanese Restaurant",
+    "location": {
+      "address": "High Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/8bcusFZC1XcUhtSX7"
+    },
+    "cuisineTypes": [
+      "japanese"
+    ],
+    "priceRange": "medium",
+    "rating": 4.7,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "0b9b67a3bb0d96a0e2a82427",
+    "name": "Sunflower Thai Vegan Restaurant",
+    "location": {
+      "address": "High Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/7hWDdh6UheSoqbbo6"
+    },
+    "cuisineTypes": [
+      "thai",
+      "vegan"
+    ],
+    "priceRange": "medium",
+    "rating": 4.5,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "817d79131cddbd728ab973fd",
+    "name": "The Shelf",
+    "location": {
+      "address": "High Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/Y8aR88gFdAWLD3aj6"
+    },
+    "cuisineTypes": [
+      "cafe"
+    ],
+    "priceRange": "low",
+    "rating": 4.3,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "e34e154cfe2eff25100219c9",
+    "name": "Dong De Moon",
+    "location": {
+      "address": "High Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/v5rssnftQgspSk5a7"
+    },
+    "cuisineTypes": [
+      "restaurant"
+    ],
+    "priceRange": "medium",
+    "rating": 4.2,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "22d4298b1143896cf96f4ee0",
+    "name": "The Coffee Club High Street",
+    "location": {
+      "address": "High Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/41q9jMYmesLoyzhX8"
+    },
+    "cuisineTypes": [
+      "drink",
+      "coffee",
+      "cafe"
+    ],
+    "priceRange": "medium",
+    "rating": 3.6,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "b948ca425c67ec77342b0dde",
+    "name": "BannSang Korean Restaurant",
+    "location": {
+      "address": "High Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/rK1Pr68CeEEyKJu9A"
+    },
+    "cuisineTypes": [
+      "korean"
+    ],
+    "priceRange": "high",
+    "rating": 4.3,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "af278c38bccafd02cff484be",
+    "name": "The Don",
+    "location": {
+      "address": "High Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/K3c6A9nb2ZfLuKkN9"
+    },
+    "cuisineTypes": [
+      "japanese"
+    ],
+    "priceRange": "medium",
+    "rating": 4.5,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "63e0281b18a3ca7dab02d992",
+    "name": "麥吉 Machi Machi CBD",
+    "location": {
+      "address": "High Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/Bqi8DUtNDKrwTQGs8"
+    },
+    "cuisineTypes": [
+      "drink",
+      "bubble tea"
+    ],
+    "priceRange": "low",
+    "rating": 4.5,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "c246182b4a49c05748df56b4",
+    "name": "Onslow",
+    "location": {
+      "address": "Princess Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/h5adAzXQh2xq5jj46"
+    },
+    "cuisineTypes": [
+      "restaurant"
+    ],
+    "priceRange": "high",
+    "rating": 4.8,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "dbf112bd8498753f0c3484e1",
+    "name": "Go Ramen",
+    "location": {
+      "address": "Durham Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/7fxfoQBpuDvRFNN77"
+    },
+    "cuisineTypes": [
+      "japanese"
+    ],
+    "priceRange": "medium",
+    "rating": 4.7,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  },
+  {
+    "_id": "7c64e08484cdef19bb73cd06",
+    "name": "Gilt Brasserie",
+    "location": {
+      "address": "Chancery Street",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/xBeNWibtytsFdoR36"
+    },
+    "cuisineTypes": [
+      "restaurant"
+    ],
+    "priceRange": "high",
+    "rating": 4.6,
+    "openingHours": [],
+    "isCampusVendor": false,
+    "isAvailable": true
+  }
+]

@@ -1,53 +1,85 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react'; 
 import Navbar from '../component/Navbar'; 
 import Search from '../component/Search';
 import FoodCard from '../component/FoodCard';
 
 export default function Homepage() {
   const [budget, setBudget] = useState(15);
-  const [cuisine, setCuisine] = useState('Salad'); // 默认大写，更正式
+  const [cuisine, setCuisine] = useState('Salad'); 
   const [distance, setDistance] = useState('1');
 
-  // 🌟 1. 重构 Mock 数据数组：按类型定义，并更新了第一张拉面图为绝对稳定的链接
-  const currentOffers = [
-    {
-      id: 1,
-      // 🌟 类型 1：主食 (Main Dish)
-      type: "Main Dish",
-      name: "Sector's Finest Ramen",
-      distance: "300m",
-      price: "18.5",
-      cuisineEmoji: "🍜", // 这个决定常亮图标
-      // 🌟 全新换上的绝对稳定、高颜值的拉面图片链接，色彩鲜明大气
-      imageUrl: "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=800", // 绝对稳定
-      suggestion: "Hearty and perfectly within the UoA Sector vibes. Best for a proper lunch."
-    },
-    {
-      id: 2,
-      // 🌟 类型 2：饮料啤酒 (Drinks & Beer) - 保持色彩鲜明的精酿啤酒图片
-      type: "Drinks & Beer",
-      name: "The Keg: Craft Lager",
-      distance: "450m",
-      price: "12.0",
-      cuisineEmoji: "🍺",
-      imageUrl: "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800", // 绝对稳定
-      suggestion: "Refreshing draft lager. Perfect companion after a busy day on campus."
-    },
-    {
-      id: 3,
-      // 🌟 类型 3：小吃甜品 (Snacks & Desserts) - 保持你最喜欢的Cafe图
-      type: "Snacks & Desserts",
-      name: "Pastry Heaven: Croissant",
-      distance: "150m",
-      price: "7.5",
-      cuisineEmoji: "🥐",
-      imageUrl: "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=600&auto=format&fit=crop", 
-      suggestion: "Delicate and warm. Great for a quick bite between lectures."
-    }
-  ];
+  // 🟢 1. 核心修改：将原本静态的 currentOffers 变成状态，方便随 budget 动态更新
+  const [currentOffers, setCurrentOffers] = useState([]);
+  
+  // 🟢 2. 核心修改：引入 selectedOfferId 状态，用来管理哪个 FoodCard 被选中。满足你选取时有左边图标的需求。
+  const [selectedOfferId, setSelectedOfferId] = useState(null);
 
-  // 🌟 2. 彻底简化图标逻辑：让它“常亮”
-  // 永远只取列表第一项（主食）的 Emoji
+  // 🟢 3. 核心修改：使用 useEffect 监听 budget 的变化，动态计算 Main+Drink+Dessert 组合
+  // (这里模拟从 MongoDB 获取数据并进行穷举匹配，接入后端时只需 fetch(`/api/recommend?budget=${budget}`) 并 set 结果)
+  useEffect(() => {
+    const targetBudget = Number(budget);
+
+    // 🟢 4. 模拟数据库：加入 Main, Drinks, Dessert 三类数据
+    const mains = [
+      { id: 'm1', type: "Main Dish", name: "Premium Wagyu Steak", price: 25, cuisineEmoji: "🥩", imageUrl: "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=800", suggestion: "Indulge in a premium choice, perfectly aged." },
+      { id: 'm2', type: "Main Dish", name: "Sector's Finest Ramen", price: 15, cuisineEmoji: "🍜", imageUrl: "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=800", suggestion: "Hearty and perfectly within the UoA Sector vibes." },
+      { id: 'm3', type: "Main Dish", name: "Classic Cheeseburger", price: 10, cuisineEmoji: "🍔", imageUrl: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800", suggestion: "A quick and delicious bite on a budget." }
+    ];
+
+    const drinks = [
+      { id: 'd1', type: "Drinks", name: "Vintage Wine Glass", price: 10, cuisineEmoji: "🍷", imageUrl: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800", suggestion: "Elegant pairing for a nice meal." },
+      { id: 'd2', type: "Drinks", name: "The Keg: Craft Lager", price: 5, cuisineEmoji: "🍺", imageUrl: "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800", suggestion: "Refreshing draft lager. Perfect companion." }
+    ];
+
+    const desserts = [
+      { id: 'ds1', type: "Dessert", name: "Classic Tiramisu", price: 8, cuisineEmoji: "🍰", imageUrl: "https://images.unsplash.com/photo-1571115177098-24c42de1bd0f?w=800", suggestion: "A rich Italian finish to your meal." },
+      { id: 'ds2', type: "Dessert", name: "Vanilla Ice Cream", price: 4, cuisineEmoji: "🍦", imageUrl: "https://images.unsplash.com/photo-1563805042-7684c8a9e9cb?w=800", suggestion: "Simple, cooling, and sweet." }
+    ];
+
+    let bestCombo = [];
+    let minDiff = Infinity;
+
+    // 为了允许组合中缺少饮料或甜点（例如：只吃主食），我们在可选列表中加入“无 (价格为0)”的选项
+    const optionalDrinks = [...drinks, { price: 0, isNone: true }];
+    const optionalDesserts = [...desserts, { price: 0, isNone: true }];
+
+    // 🟢 5. 匹配算法：穷举 Mains × OptionalDrinks × OptionalDesserts，寻找最接近 Budget 的组合
+    mains.forEach(main => {
+      optionalDrinks.forEach(drink => {
+        optionalDesserts.forEach(dessert => {
+          const total = main.price + drink.price + dessert.price;
+          
+          if (total <= targetBudget) {
+            const diff = targetBudget - total;
+            if (diff < minDiff) {
+              minDiff = diff; 
+              
+              // 组装最终结果，排查掉 "无" 的选项
+              const combo = [{ ...main, distance: "300m" }];
+              if (!drink.isNone) combo.push({ ...drink, distance: "450m" });
+              if (!dessert.isNone) combo.push({ ...dessert, distance: "200m" });
+              
+              bestCombo = combo;
+            }
+          }
+        });
+      });
+    });
+
+    // 🟢 6. 更新当前推荐列表：如果有最佳组合则渲染，否则提供预算内单品兜底
+    if (bestCombo.length > 0) {
+      setCurrentOffers(bestCombo);
+      // 默认选中第一个主食卡片
+      setSelectedOfferId(bestCombo[0].id);
+    } else {
+      const affordable = [...mains, ...drinks, ...desserts].filter(item => item.price <= targetBudget);
+      setCurrentOffers(affordable.map((item, index) => ({ ...item, distance: "100m", id: `single-${index}` })));
+      // 如果没有最佳组合，则不默认选中
+      setSelectedOfferId(null);
+    }
+  }, [budget]);
+
+  // 获取背景常亮 Emoji
   const permanentEmoji = currentOffers.length > 0 ? currentOffers[0].cuisineEmoji : "🍽️";
 
   return (
@@ -66,45 +98,53 @@ export default function Homepage() {
         
         <main className="flex-1 flex flex-col h-full min-w-0">
           
-          <div className="flex-1 overflow-y-auto p-12 relative custom-scrollbar">
+          {/* 🟢 修改点：优化列表区域排版和整体间距 */}
+          <div className="flex-1 overflow-y-auto p-12 relative custom-scrollbar z-10">
             
-            {/* 🌟 3. 就是这里！常亮图标。透明度提高到 0.2，看起来非常大气且“常亮” */}
-            <div 
-              className="absolute top-10 right-10 text-[15rem] opacity-20 select-none pointer-events-none transition-all duration-300"
-            >
+            {/* 常亮图标 */}
+            <div className="absolute top-10 right-10 text-[15rem] opacity-20 select-none pointer-events-none transition-all duration-300">
               {permanentEmoji}
             </div>
 
             <div className="max-w-4xl mx-auto">
               
-              <div className="mb-8">
+              <div className="mb-10">
                 <h2 className="text-2xl font-bold text-stone-800">Hi there! 👋</h2>
                 <p className="text-stone-500 font-medium mt-1">Let's find your perfect meal around UoA.</p>
               </div>
 
+              {/* 🟢 修改点：标题使用更高级、更暖的 Serif 字体和更柔和的橙色 */}
               <h1 className="text-5xl font-serif text-stone-800 italic leading-tight mb-12">
-                "I have <span className="text-orange-600">${budget}</span> <br /> 
-                and want a <span className="text-orange-600">{cuisine}</span>."
+                "I have <span className="text-orange-600 font-bold">${budget}</span> <br /> 
+                and want a <span className="text-orange-600 font-bold">{cuisine}</span>."
               </h1>
 
               {/* 使用 .map() 动态渲染多个 FoodCard */}
-              <div className="flex flex-col gap-6 mb-32 relative z-10">
-                {currentOffers.map((offer) => (
-                  <FoodCard 
-                    key={offer.id} 
-                    name={offer.name} 
-                    distance={offer.distance} 
-                    price={offer.price}
-                    suggestion={offer.suggestion}
-                    image={offer.offerTypeImageUrl || offer.imageUrl} // 传给 FoodCard 
-                    mealType={offer.type}  // 传给 FoodCard 用来显示类型
-                  />
-                ))}
+              {/* 🟢 修改点：优化整体间距，并在没有推荐时渲染一个更好看的提示框 */}
+              <div className="flex flex-col gap-8 mb-32 relative z-10">
+                {currentOffers.length > 0 ? (
+                  currentOffers.map((offer) => (
+                    // 🟢 7. 核心修改：传递 isSelected prop 给 FoodCard，通过 id 来判断是否被选中。
+                    <FoodCard 
+                      key={offer.id} 
+                      name={offer.name} 
+                      distance={offer.distance} 
+                      price={offer.price}
+                      suggestion={offer.suggestion}
+                      image={offer.imageUrl} 
+                      mealType={offer.type}  
+                      isSelected={offer.id === selectedOfferId}
+                    />
+                  ))
+                ) : (
+                   <div className="text-stone-500 font-bold p-10 bg-white/50 border border-stone-100 rounded-3xl shadow-[0_4px_16px_rgba(0,0,0,0.01)] text-center">Budget might be too low to find a combo! Please increase your budget.</div>
+                )}
               </div>
 
             </div>
           </div>
 
+          {/* 搜索栏 */}
           <div className="p-8 bg-[#fcf9f2]/80 backdrop-blur-xl border-t border-white/50 shadow-[0_-10px_40px_rgba(0,0,0,0.03)] z-20 relative">
             <Search 
               budget={budget} setBudget={setBudget}
@@ -117,4 +157,4 @@ export default function Homepage() {
       </div>
     </div>
   );
-}
+} 

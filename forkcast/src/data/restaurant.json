@@ -1,0 +1,93 @@
+[
+  {
+    "_id": "c6d9df3ab57b129cfbd7f281",
+    "name": "NEEDO University of Auckland I PASTA & PIZZA",
+    "location": {
+      "address": "University of Auckland Campus",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/fL21VZKjzjtzB9qa8"
+    },
+    "cuisineTypes": [
+      "pizza",
+      "pasta",
+      "italian"
+    ],
+    "priceRange": "low",
+    "rating": 4.0,
+    "openingHours": [],
+    "isCampusVendor": true,
+    "isAvailable": true
+  },
+  {
+    "_id": "88b3b7c8b51e75273ded610b",
+    "name": "Gong cha (UOA)",
+    "location": {
+      "address": "University of Auckland Campus",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/y8mfUYZLBxHvMtzy8"
+    },
+    "cuisineTypes": [
+      "drink",
+      "bubble tea"
+    ],
+    "priceRange": "low",
+    "rating": 3.3,
+    "openingHours": [],
+    "isCampusVendor": true,
+    "isAvailable": true
+  },
+  {
+    "_id": "f15fcb5166e22550ea3b8a08",
+    "name": "TANK Auckland university",
+    "location": {
+      "address": "University of Auckland Campus",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/jC7qcxHUXrKnadnF8"
+    },
+    "cuisineTypes": [
+      "drink",
+      "smoothie",
+      "healthy"
+    ],
+    "priceRange": "medium",
+    "rating": 4.0,
+    "openingHours": [],
+    "isCampusVendor": true,
+    "isAvailable": true
+  },
+  {
+    "_id": "b3f51fc4de4dc4346c3b6ce0",
+    "name": "Hello Food Limited",
+    "location": {
+      "address": "University of Auckland Campus",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/ZT7dWnDbtccuNhXRA"
+    },
+    "cuisineTypes": [
+      "chinese",
+      "drink"
+    ],
+    "priceRange": "medium",
+    "rating": 3.7,
+    "openingHours": [],
+    "isCampusVendor": true,
+    "isAvailable": true
+  },
+  {
+    "_id": "4dd10f6a16c9d17cc2352df8",
+    "name": "ChiChop",
+    "location": {
+      "address": "University of Auckland Campus",
+      "distanceFromCampus": null,
+      "googleMapsUrl": "https://maps.app.goo.gl/QoEXqm8kSc6Vz46R9"
+    },
+    "cuisineTypes": [
+      "drink"
+    ],
+    "priceRange": "low",
+    "rating": 3.5,
+    "openingHours": [],
+    "isCampusVendor": true,
+    "isAvailable": true
+  }
+]
